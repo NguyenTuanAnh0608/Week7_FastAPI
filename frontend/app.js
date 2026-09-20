@@ -2,7 +2,6 @@ const form = document.getElementById("item-form");
 const tableBody = document.getElementById("table-body");
 
 
-
 form.addEventListener("submit", async function (e) {e.preventDefault();
   const name = document.getElementById("name").value;
   const price = document.getElementById("price").value;

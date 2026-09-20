@@ -2,7 +2,6 @@ from fastapi import (FastAPI,HTTPException,Query,Response)
 from pydantic import BaseModel, Field
 from pathlib import Path
 from fastapi.staticfiles import StaticFiles
-
 app = FastAPI()
 class ItemCreate(BaseModel):
     name: str
