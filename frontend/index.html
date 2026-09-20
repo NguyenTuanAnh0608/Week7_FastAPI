@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Item Management</h1>
+    </header>
+    <main>
+      <form id="item-form">
+        <input
+          type="text"
+          id="name"
+          placeholder="Item name"
+          required
+        />
+        <input
+          type="number"
+          id="price"
+          placeholder="Price"
+          step="0.01"
+          required
+        />
+        <button type="submit">
+          Add Item
+        </button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
+
